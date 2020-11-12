@@ -64,7 +64,7 @@ class Carousel extends Component {
     onScrollEnd(data[index], index);
     this.currentIndex = index;
     setTimeout(() => {
-      this._scrollView.getNode().scrollToOffset({
+      this._scrollView.scrollToOffset({
         offset:
           index * (itemWidth + separatorWidth) +
           this.halfItemWidth -
